@@ -1,0 +1,21 @@
+---con npx -- con create-react-app
+npx create-react-app my-app
+cd my-app
+npm start
+---
+
+gist primera parte: https://gist.github.com/Klerith/b0111f52ba16451d095f38d4c995605b
+repo completo: https://github.com/Klerith/react-intro-javascript
+
+---vite es mas rapido
+con npm--> pnpm create vite
+
+rafc crea un nuevo component
+
+ctrl + shift + p==>orden asc
+
+---
+
+import {useState} from 'react'
+
+--Muchos mencionan que el 100% es malo porque el código queda muy rígido, pero eso significaría que el testing --está mal hecho, porque el testing a la vez debe de ser flexible.
