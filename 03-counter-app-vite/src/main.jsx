@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 //import { App, HelloWorld } from "./HelloWorld";
 //import { FirstApp } from "./FirstApp";
-import { CounterApp } from "./CounterApp/CounterApp";
+import { CounterApp } from "./CounterApp";
 
 import "./styles.css";
 
