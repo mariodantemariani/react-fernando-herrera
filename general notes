@@ -36,3 +36,8 @@ Hay que crear, en la raíz de nuestro proyecto, un archivo jsconfig.json con el 
 { "typeAcquisition": { "include": [ "jest" ] } }
 
 Cambiar extensión de los archivos jest.config.js y babel.config.js a .cjs
+
+instalar react testing library --> pnpm add --save-dev @testing-library/react
+instalar Jest-Dom --> pnpm add -D jest-environment-jsdom
+
+---

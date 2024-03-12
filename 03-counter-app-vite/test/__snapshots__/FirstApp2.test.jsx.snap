@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en First App should be the same that snapShot 1`] = `
+<div>
+  <h1
+    data-testid="test-title"
+  >
+     
+    Test title
+     
+  </h1>
+  <p>
+    No hay subtítulo
+  </p>
+  <p>
+    Fernando Herrera
+  </p>
+</div>
+`;
