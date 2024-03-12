@@ -4,6 +4,8 @@ cd my-app
 npm start
 ---
 
+---> correr npm run dev
+
 gist primera parte: https://gist.github.com/Klerith/b0111f52ba16451d095f38d4c995605b
 repo completo: https://github.com/Klerith/react-intro-javascript
 
@@ -18,4 +20,19 @@ ctrl + shift + p==>orden asc
 
 import {useState} from 'react'
 
+--PRUEBAS
 --Muchos mencionan que el 100% es malo porque el código queda muy rígido, pero eso significaría que el testing --está mal hecho, porque el testing a la vez debe de ser flexible.
+
+-- instalar jest --> npm install --save-dev jest
+-- instalar los types --> pnpm add -D @types/jest
+-- instalar babel --> pnpm add --save-dev babel-jest @babel/core @babel/preset-env
+-- generar el archivo babel.config.cjs
+
+--> correrlos --> npm run test
+
+-- si no aparecen los métodos del test---
+Hay que crear, en la raíz de nuestro proyecto, un archivo jsconfig.json con el siguiente código:
+
+{ "typeAcquisition": { "include": [ "jest" ] } }
+
+Cambiar extensión de los archivos jest.config.js y babel.config.js a .cjs
