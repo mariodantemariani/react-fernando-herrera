@@ -62,3 +62,7 @@ Helper: Como su nombre lo induce, una función que ayuda a hacer un proceso espe
 
 --
 generar build : npm run build
+
+--
+desplegar a githubpages
+cambiar dist --> docs
