@@ -29,6 +29,7 @@ import {useState} from 'react'
 -- generar el archivo babel.config.cjs
 
 --> correrlos --> npm run test
+--> console.log()--> screen.debug();
 
 -- si no aparecen los métodos del test---
 Hay que crear, en la raíz de nuestro proyecto, un archivo jsconfig.json con el siguiente código:
@@ -39,6 +40,10 @@ Cambiar extensión de los archivos jest.config.js y babel.config.js a .cjs
 
 instalar react testing library --> pnpm add --save-dev @testing-library/react
 instalar Jest-Dom --> pnpm add -D jest-environment-jsdom
+
+pnpm i --save-dev jest babel-jest @babel/preset-env @babel/preset-react
+pnpm i --save-dev @testing-library/react @types/jest jest-environment-jsdom
+pnpm - --save-dev whatwg-fetch
 
 ---
 
@@ -65,4 +70,4 @@ generar build : npm run build
 
 --
 desplegar a githubpages
-cambiar dist --> docs
+cambiar dist --> docs ir a github, ir a settings ir a pages seleccionar main y docs

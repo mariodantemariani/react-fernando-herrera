@@ -11,13 +11,12 @@ export const AddCategory = ({ onNewCategory }) => {
     event.preventDefault();
     if (inputValue.trim().length <= 1) return;
 
-    // setCategories( categories => [ inputValue, ...categories ]);
     setInputValue("");
     onNewCategory(inputValue.trim());
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <input
         type="text"
         placeholder="Buscar gifs"
