@@ -4,6 +4,8 @@ cd my-app
 npm start
 ---
 
+## rafc crea un nuevo component
+
 ---> correr npm run dev
 
 gist primera parte: https://gist.github.com/Klerith/b0111f52ba16451d095f38d4c995605b
@@ -11,8 +13,6 @@ repo completo: https://github.com/Klerith/react-intro-javascript
 
 ---vite es mas rapido
 con npm--> pnpm create vite
-
-rafc crea un nuevo component
 
 ctrl + shift + p==>orden asc
 
@@ -41,3 +41,24 @@ instalar react testing library --> pnpm add --save-dev @testing-library/react
 instalar Jest-Dom --> pnpm add -D jest-environment-jsdom
 
 ---
+
+no usar push cuando añadimos a una lista
+
+--
+useState mantiene/guarda/recuerda los valores de tu Componente, esto es en lo que React se "especializa" o el principal trabajo que hace.
+
+useEffect (disparar efectos secundarios) es como un puente entre tu componente y el mundo exterior, como:
+
+- API en un servidor remoto: Donde quieres recibir informacion y mostrarlo en tu Componente (actualizando su estado).
+
+- Eventos del mouse en la pantalla: Puedes escuchar estos eventos y actualizar tu estado del Componente.
+  seEffect tambien nos permite ejecuta codigo si el componente es re-renderizado o las dependencias del mismo cambian.
+
+Component: Una función que renderiza una parte de la aplicación cuando cambia el estado de algo (Usando hooks)
+
+Custom Hook: Una función que hace algo especifica utilizando el estado (hooks) pero NO renderiza
+
+Helper: Como su nombre lo induce, una función que ayuda a hacer un proceso especifico, pero no utiliza el estado
+
+--
+generar build : npm run build
