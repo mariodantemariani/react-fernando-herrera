@@ -68,6 +68,24 @@ Custom Hook: Una función que hace algo especifica utilizando el estado (hooks) 
 
 Helper: Como su nombre lo induce, una función que ayuda a hacer un proceso especifico, pero no utiliza el estado
 
+useRef=????
+useRef() fue implementado para que funcionara específicamente dentro de los Hook de React, en cambio el createRef() se utiliza cuando implementas clases dentro del componente de React.
+
+Por ese motivo no te funciona a la hora de llamarlo dentro de un callback, ya que el componente no lo está definiendo como clase.
+
+Te dejo esta lectura para que le quede un poco más claro.
+
+https://latteandcode.medium.com/react-el-hook-useref-6e20f026d5b
+
+useRef: Permite mantener referencias mutables a elementos del DOM o a valores que persisten entre re-renderizados.
+useLayoutEffect: Similar a useEffect, pero se ejecuta de forma síncrona después de todas las mutaciones del DOM.
+
+memo
+
+useMemo: usememo memoriza un valor
+
+useCallback: usado para memorizar funciones
+
 --
 generar build : npm run build
 
