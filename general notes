@@ -20,6 +20,9 @@ ctrl + shift + p==>orden asc
 
 import {useState} from 'react'
 
+-- para los props types
+npm i prop-types
+
 --PRUEBAS
 --Muchos mencionan que el 100% es malo porque el código queda muy rígido, pero eso significaría que el testing --está mal hecho, porque el testing a la vez debe de ser flexible.
 
