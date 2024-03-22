@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en HomePage should be the same that snapShot 1`] = `
+<div>
+  <h1>
+    Home APP 
+  </h1>
+  <hr />
+  <pre
+    aria-label="pre"
+  >
+    null
+  </pre>
+</div>
+`;

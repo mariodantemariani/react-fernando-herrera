@@ -13,12 +13,14 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
           todo?.done && "text-decoration-line-through"
         }`}
         onClick={() => onToggleTodo(todo.id)}
+        aria-label="span"
       >
         {todo.description}
       </span>
       <button
         className="btn btn-danger align-self-center btn-sm"
         onClick={() => onDeleteTodo(todo.id)}
+        aria-label="button"
       >
         Delete
       </button>
@@ -28,6 +30,6 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
 
 TodoItem.propTypes = {
   todo: PropTypes.object,
-  //onDeleteTodo: PropTypes.func,
-  //onTogggleTodo: PropTypes.func,
+  onDeleteTodo: PropTypes.func,
+  onToggleTodo: PropTypes.func,
 };

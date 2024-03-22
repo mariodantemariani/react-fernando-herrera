@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba en MultipleCustomHooks should be the same that snapShot 1`] = `
+<div>
+  MultipleCustomHooks
+  <h1>
+    Informacion del pokemon
+  </h1>
+  <hr />
+  <section
+    class="alert alert-info text-center p-0 m-0 d-flex align-items-center justify-content-center"
+    style="text-align: center; height: 200px;"
+  >
+    Cargando...
+  </section>
+  <button
+    class="btn btn-primary mt-2"
+    disabled=""
+  >
+    Anterior
+  </button>
+  <button
+    class="btn btn-primary mt-2"
+  >
+    Siguiente
+  </button>
+</div>
+`;

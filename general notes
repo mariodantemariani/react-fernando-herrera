@@ -46,7 +46,11 @@ instalar Jest-Dom --> pnpm add -D jest-environment-jsdom
 
 pnpm i --save-dev jest babel-jest @babel/preset-env @babel/preset-react
 pnpm i --save-dev @testing-library/react @types/jest jest-environment-jsdom
-pnpm - --save-dev whatwg-fetch
+pnpm i --save-dev whatwg-fetch
+
+correr--> npm run test
+
+para crear el cuerpo->desc y luego test
 
 ---
 
@@ -85,6 +89,8 @@ memo
 useMemo: usememo memoriza un valor
 
 useCallback: usado para memorizar funciones
+
+useContext: observable en el midlewhere
 
 --
 generar build : npm run build

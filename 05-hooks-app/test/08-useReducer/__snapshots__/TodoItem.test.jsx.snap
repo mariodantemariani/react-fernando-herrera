@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en TodoItem should be the same that snapShot 1`] = `
+<div>
+  <li
+    class="list-group-item d-flex justify-content-between"
+  >
+    <span
+      aria-label="span"
+      class="align-self-center false"
+    >
+      Demo todo 1
+    </span>
+    <button
+      aria-label="button"
+      class="btn btn-danger align-self-center btn-sm"
+    >
+      Delete
+    </button>
+  </li>
+</div>
+`;

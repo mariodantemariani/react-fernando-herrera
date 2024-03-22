@@ -17,7 +17,7 @@ export const PokemonCard = ({ id, name, sprites = [] }) => {
   return (
     <section style={{ height: "200px" }}>
       <h2 className="text-capitalize" ref={pRef}>
-        #{id} - {name}
+        {name}
       </h2>
 
       <div>
