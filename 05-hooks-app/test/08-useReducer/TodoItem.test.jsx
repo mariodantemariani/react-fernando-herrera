@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { TodoItem } from "../../src/08-useReducer/TodoItem";
 
-describe("Pruebas en TodoItem", () => {
+describe("Test <TodoItem> component", () => {
   const todo = {
     id: 1,
     description: "Demo todo 1",
