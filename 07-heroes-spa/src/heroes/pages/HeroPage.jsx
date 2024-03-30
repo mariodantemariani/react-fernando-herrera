@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getHeroesById } from "../helpers/getHeroById";
-import "animate.css";
 
 export const HeroPage = () => {
   const { id } = useParams();

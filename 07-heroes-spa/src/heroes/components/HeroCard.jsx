@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import "animate.css";
 
 const CharactersByHero = ({ characters, alter_ego }) => {
   return characters === alter_ego ? (

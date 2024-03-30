@@ -16,9 +16,7 @@ exports[`Pruebas en <SearchPage /> debe de mostrarse correactamente con valores 
         Search Form
       </h4>
       <hr />
-      <form
-        aria-label="form"
-      >
+      <form>
         <input
           autocomplete="off"
           class="form-control"
@@ -43,13 +41,11 @@ exports[`Pruebas en <SearchPage /> debe de mostrarse correactamente con valores 
       </h4>
       <hr />
       <div
-        aria-label="alert-primary"
         class="alert alert-primary animate__animated animate__fadeIn"
       >
         Search a Hero
       </div>
       <div
-        aria-label="alert-danger"
         class="alert alert-danger animate__animated animate__fadeIn"
         style="display: none;"
       >
