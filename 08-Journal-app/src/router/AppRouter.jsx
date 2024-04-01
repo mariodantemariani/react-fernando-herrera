@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { AuthRoutes } from "../Auth/routes/AuthRoutes";
-import { JornalRoutes } from "../journal/routes/JornalRoutes";
+import { JournalRoutes } from "../journal/routes/JournalRoutes";
 
 export const AppRouter = () => {
   return (
     <Routes>
       <Route path="/auth/*" element={<AuthRoutes />} />
-      <Route path="/*" element={<JornalRoutes />} />
+      <Route path="/*" element={<JournalRoutes />} />
       <Route />
     </Routes>
   );
