@@ -60,8 +60,11 @@ no usar push cuando añadimos a una lista
 
 --
 useState mantiene/guarda/recuerda los valores de tu Componente, esto es en lo que React se "especializa" o el principal trabajo que hace.
+--se usa para mantener estados
 
 useEffect (disparar efectos secundarios) es como un puente entre tu componente y el mundo exterior, como:
+
+- si quiero hacer algo cuando el componente es creado la primera vez y solo una vez, usar useEffect.
 
 - API en un servidor remoto: Donde quieres recibir informacion y mostrarlo en tu Componente (actualizando su estado).
 
@@ -88,15 +91,50 @@ useLayoutEffect: Similar a useEffect, pero se ejecuta de forma síncrona despué
 
 memo
 
-useMemo: usememo memoriza un valor
+useMemo: usarlo cuando quiero memoriza un valor
 
 useCallback: usado para memorizar funciones
 
 useContext: observable en el midlewhere
 
---
+---
+
+slice??
+
 generar build : npm run build
 
 --
 desplegar a githubpages
 cambiar dist --> docs ir a github, ir a settings ir a pages seleccionar main y docs
+
+=====
+clase 263: crear snippets
+ctrl+mayusc+p
+=====
+Thunks: son acciones asincronas que disparan (dispach) otra acciones a nuestro reducer.
+
+---
+
+266
+Axios: permite hacer muchas configuraciones
+pnpm add axios
+1-crear folder API
+2-pokemon.api.js
+3- configurarlo
+
+Redux toolkit
+1- instalar redux
+npm install @reduxjs/toolkit
+npm install react-redux
+2- configurar el store/store.js
+3- cofigurar el proveedor, tentativamente va en el main
+<Provider store={store}>
+<BrowserRouter>
+<JournalApp />
+</BrowserRouter>
+</Provider>
+4- proveer reducers validos/slices/reducers
+
+---
+
+useMemo se utiliza para memorizar datos y así evitar funciones pesadas en cada renderizado, en este caso estas fijándote el status que depende de una función asincronica.
