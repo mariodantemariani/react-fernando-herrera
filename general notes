@@ -100,6 +100,7 @@ useContext: observable en el midlewhere
 ---
 
 slice??
+reducers: todo trabajo sincrono, NO puede ser asincrono
 
 generar build : npm run build
 
@@ -112,6 +113,7 @@ clase 263: crear snippets
 ctrl+mayusc+p
 =====
 Thunks: son acciones asincronas que disparan (dispach) otra acciones a nuestro reducer.
+cuando tengo que despachar accines asincronas
 
 ---
 
@@ -137,4 +139,6 @@ npm install react-redux
 
 ---
 
-useMemo se utiliza para memorizar datos y así evitar funciones pesadas en cada renderizado, en este caso estas fijándote el status que depende de una función asincronica.
+## useMemo se utiliza para memorizar datos y así evitar funciones pesadas en cada renderizado, en este caso estas fijándote el status que depende de una función asincronica.
+
+MVC react:de la vista, jsx salta thunks, y del thunks al Slice
