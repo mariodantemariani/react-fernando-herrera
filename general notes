@@ -148,3 +148,14 @@ npm install react-redux
 ## useMemo se utiliza para memorizar datos y así evitar funciones pesadas en cada renderizado, en este caso estas fijándote el status que depende de una función asincronica.
 
 MVC react:de la vista, jsx salta thunks, y del thunks al Slice
+
+---
+
+0-crear el component hijo
+1-actuallizar el jsx principal añadiendo el component en el padre </hijo>
+2- actualizar el slice, añadiendo el reducer para la accion (puede actualizar el redUx)
+3- añadir la accion al Store y añadir la accion en el return.
+4- actualiar el componente del punto 0 añadiendo la llamada a la accion creadav (sacarlo del useXXXXStore)
+5-
+
+---
