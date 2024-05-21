@@ -159,3 +159,29 @@ MVC react:de la vista, jsx salta thunks, y del thunks al Slice
 5-
 
 ---
+
+-backend-
+crear el package vacio
+npm init -y
+crear el archivo index.js
+node index.js para correr
+
+nodemon <-> viejo para evitar estar corriendo continuamente
+npm i nodemon -g
+nodemon index.js <ahora siempre va estar escuchando>
+luego de añadir el script en package, puedo hacer npm dev y listo
+
+-- Express
+npm i express
+el directorio public de node es de solo lectura
+--
+: para manejar las variables de entorno
+npm i dotenv
+-- generar foder y js files de las routes
+-- generar el controller y js de los controllers
+-- express validator: un midleware que se ejecuta antes que otra cosa
+
+mongoose
+npm i mongoose
+
+encriptar password: npm i bcryptjs
