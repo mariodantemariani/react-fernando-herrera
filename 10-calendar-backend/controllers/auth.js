@@ -1,9 +1,9 @@
 const { response } = require("express");
 const bcrypt = require("bcryptjs");
-const Usuario = require("../models/User-model");
+const Usuario = require("../models/Usuario");
 const { generarJWT } = require("../helpers/jwt");
 
-const crearUsuario = async (req, res = response) => {
+const createUser = async (req, res = response) => {
   const { email, password } = req.body;
 
   try {
@@ -42,7 +42,7 @@ const crearUsuario = async (req, res = response) => {
   }
 };
 
-const loginUsuario = async (req, res = response) => {
+const loginUser = async (req, res = response) => {
   const { email, password } = req.body;
 
   try {
@@ -83,7 +83,7 @@ const loginUsuario = async (req, res = response) => {
   }
 };
 
-const revalidarToken = async (req, res = response) => {
+const revalidateToken = async (req, res = response) => {
   const { uid, name } = req;
 
   // Generar JWT
@@ -91,12 +91,14 @@ const revalidarToken = async (req, res = response) => {
 
   res.json({
     ok: true,
+    uid,
+    name,
     token,
   });
 };
 
 module.exports = {
-  crearUsuario,
-  loginUsuario,
-  revalidarToken,
+  createUser,
+  loginUser,
+  revalidateToken,
 };
