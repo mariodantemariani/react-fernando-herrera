@@ -1,18 +1,18 @@
+/*
+    Rutas de Usuarios / Auth
+    host + /api/auth
+*/
 const { Router } = require("express");
 const { check } = require("express-validator");
 const { validateFields } = require("../middlewares/validate-fields");
 const { validateJWT } = require("../middlewares/validate-jwt");
 const {
-  createUser,
-  loginUser,
-  revalidateToken,
+  crearUsuario,
+  loginUsuario,
+  revalidarToken,
 } = require("../controllers/auth");
 
 const router = Router();
-/*
-    Rutas de Usuarios / Auth
-    host + /api/auth
-*/
 router.post(
   "/new",
   [
@@ -24,7 +24,7 @@ router.post(
     }),
     validateFields,
   ],
-  createUser
+  crearUsuario
 );
 
 router.post(
@@ -36,9 +36,9 @@ router.post(
     }),
     validateFields,
   ],
-  loginUser
+  loginUsuario
 );
 
-router.get("/renew", validateJWT, revalidateToken);
+router.get("/renew", validateJWT, revalidarToken);
 
 module.exports = router;
