@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import Swal from "sweetalert2";
 import { useAuthStore, useForm } from "../../hooks";
 import "./LoginPage.css";
 
@@ -43,7 +45,27 @@ export const LoginPage = () => {
       registerPassword,
       registerPassword2,
     });
+    if (registerPassword !== registerPassword2) {
+      Swal.fire(
+        "Error en la contraseña",
+        "Las contraseñas deben ser iguales",
+        "error"
+      );
+      return;
+    }
+
+    startRegister({
+      name: registerName,
+      email: registerEmail,
+      password: registerPassword,
+    });
   };
+
+  useEffect(() => {
+    if (errorMessage !== undefined) {
+      Swal.fire("Error en la autenticación", errorMessage, "error");
+    }
+  }, [errorMessage]);
 
   return (
     <div className="container login-container">

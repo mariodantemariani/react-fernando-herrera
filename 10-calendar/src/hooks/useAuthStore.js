@@ -41,6 +41,7 @@ export const useAuthStore = () => {
     }
   };
 
+  //no usar useEffect porque va a ser usado en cada lugar donde se usa este custom hook
   const checkAuthToken = async () => {
     const token = localStorage.getItem("token");
     if (!token) return dispatch(onLogout());
