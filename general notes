@@ -160,6 +160,11 @@ MVC react:de la vista, jsx salta thunks, y del thunks al Slice
 
 ---
 
+usar slices sin thunks
+1-crear el slice
+2-actualizar el actualizar el store
+3-
+
 -backend-
 crear el package vacio
 npm init -y
