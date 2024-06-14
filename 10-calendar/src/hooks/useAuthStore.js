@@ -1,6 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
-import { clearErrorMessage, onChecking, onLogin, onLogout } from "../store";
 import { calendarApi } from "../api";
+import {
+  clearErrorMessage,
+  onChecking,
+  onLogin,
+  onLogout,
+  onLogoutCalendar,
+} from "../store";
 
 export const useAuthStore = () => {
   const { status, user, errorMessage } = useSelector((state) => state.auth);
@@ -13,7 +19,6 @@ export const useAuthStore = () => {
       localStorage.setItem("token", data.token);
       localStorage.setItem("token-init-date", new Date().getTime());
       dispatch(onLogin({ name: data.name, uid: data.uid }));
-      console.log(data);
     } catch (error) {
       dispatch(onLogout("Credenciales incorrectas"));
       setTimeout(() => {
@@ -41,7 +46,6 @@ export const useAuthStore = () => {
     }
   };
 
-  //no usar useEffect porque va a ser usado en cada lugar donde se usa este custom hook
   const checkAuthToken = async () => {
     const token = localStorage.getItem("token");
     if (!token) return dispatch(onLogout());
@@ -59,6 +63,7 @@ export const useAuthStore = () => {
 
   const startLogout = () => {
     localStorage.clear();
+    dispatch(onLogoutCalendar());
     dispatch(onLogout());
   };
 
