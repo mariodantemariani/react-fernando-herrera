@@ -33,24 +33,13 @@ export const LoginPage = () => {
 
   const loginSubmit = (event) => {
     event.preventDefault();
-    console.log({ loginEmail, loginPassword });
     startLogin({ email: loginEmail, password: loginPassword });
   };
 
   const registerSubmit = (event) => {
     event.preventDefault();
-    console.log({
-      registerName,
-      registerEmail,
-      registerPassword,
-      registerPassword2,
-    });
     if (registerPassword !== registerPassword2) {
-      Swal.fire(
-        "Error en la contraseña",
-        "Las contraseñas deben ser iguales",
-        "error"
-      );
+      Swal.fire("Error en registro", "Contraseñas no son iguales", "error");
       return;
     }
 
